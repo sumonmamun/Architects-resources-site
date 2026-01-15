@@ -178,18 +178,24 @@ fact-description{
     img {
   filter: grayscale(100%);
 }
-
+}
+.footer-style{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 30px 0;
+    margin-top: 130px;
+    text-align: center;
 }
 /*Responsive media query*/
 @media screen and (max-width:576px) {
     .navbar, 
     .nav-links,
-    .teams
+    .teams,
+    .fact-card,
     .features-secund{
         flex-direction: column;
     }   
     .team-img-container .fact-container{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
     .our-feature{
         margin-left: 20px;
     }
@@ -199,12 +205,15 @@ fact-description{
     }
     .exprince-badge{
         margin-left: 20px;
-        margin-top: 20px;}
+        margin-top: 20px;
+    }
 }
 }
+
 /*medium devices*/
 @media screen and (min-width: 576px) and (max-width: 992px) 
-    .teams
+    .teams,
+    .fact-card,
     .features-secund{
         flex-direction: column;
     .our-feature{
